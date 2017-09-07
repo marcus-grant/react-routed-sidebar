@@ -1,0 +1,13 @@
+# Dev Dependencies
+*node_modules*
+
+# Logs
+*.log
+*/logs*
+
+# Editor Cache files
+*.swp # vim
+
+# misc. OS crap
+*DS_Store*
+
