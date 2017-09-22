@@ -5,7 +5,8 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import Sidebar from './sidebar.jsx'
+import Sidebar from './sidebar.jsx';
+import Header from './header';
 
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
