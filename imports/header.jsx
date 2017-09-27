@@ -1,7 +1,7 @@
 import React from 'react';
 
+// TODO: Add Icon prop for rendering icon image
 export default class Header extends React.Component {
-
   render() {
     return (
       <div>

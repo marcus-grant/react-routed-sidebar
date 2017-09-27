@@ -5,6 +5,8 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import HomeDash from './dash-items/home-dash';
+import ROICDash from './dash-items/roic-dash';
 
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
@@ -13,22 +15,18 @@ import {
 const routes = [
   { path: '/',
     exact: true,
-    sidebar: () => <div>Home</div>,
-    main: () => <h1>Home</h1>,
+    main: () => <HomeDash />,
     text: 'Home'
   },
-  { path: '/toola',
-    sidebar: () => <div>Tool A</div>,
-    main: () => <h2>Tool A</h2>,
-    text: 'Tool A'
+  { path: '/roic',
+    main: () => <ROICDash />,
+    text: 'ROIC Tool'
   },
   { path: '/toolb',
-    sidebar: () => <div>Tool B</div>,
     main: () => <h2>Tool B</h2>,
     text: 'Tool B'
   },
   { path: '/hello',
-    sidebar: () => <div>Hello!</div>,
     main: () => (
       <div>
         <h2>Hello</h2>
@@ -55,7 +53,7 @@ const Sidebar = () => (
        {/*<li><Link to='/'>Home!</Link></li>*/}
        <SidebarItem to="/" text="Home!" />
        <SidebarItem to="/hello" text="Hello!"/>
-       <li><Link to="/toola">Tool A</Link></li>
+       <li><Link to="/roic">ROIC Tool</Link></li>
        <li><Link to="/toolb">Tool B</Link></li>
       </ul>
 
