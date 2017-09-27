@@ -32,7 +32,8 @@ const routes = [
     main: () => (
       <div>
         <h2>Hello</h2>
-        <img src="http://placekitten.com/200/300" />
+      <img src="http://lorempixel.com/400/400/cats" />
+      {/*<img src="http://lorempixel.com/g/400/400/cats" />*/}
       </div>
     ),
     text: 'Hello'
